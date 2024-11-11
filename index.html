@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrandName</title>
+    <link rel="stylesheet" media="all" href="css/core.css" />
+    <link rel="stylesheet" media="(min-width: 768px)" href="css/wide.css">
+  </head>
+  <body>
+    <header>
+      <div class="navigate">
+        <p class="nav__logo">BrandName</p>
+        <div class="burger-icon" onclick="toggleMenu()">
+          <img src="images/icn-menu.icn-xs.svg" alt="menu icon" />
+        </div>
+        <nav class="nav-bar">
+          <ul class="nav__list">
+            <li class="nav__button"><a href="#home">Home</a></li>
+            <li class="nav__button"><a href="#product">Product</a></li>
+            <li class="nav__button"><a href="#pricing">Pricing</a></li>
+            <li class="nav__button"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <section class="page-front">
+        <h1 class="page-front__header">We Ensure A Best Insurance Service</h1>
+        <p class="page-front__text">
+          We know how large objects will act, but things on a small scale just
+          do not act that way.
+        </p>
+        <div class="page-front__box">
+        <a class="page-front__button--blue page-front__button" href="#contact">Get Quote Now</a>
+        <a class="page-front__button page-front__button--transparent" href="#consult">Learn More</a>
+    </div>
+      </section>
+    </header>
+    <main>
+      <section id="product" class="features">
+        <article class="features__box">
+            <img src="images/icn-resize.icn-xl.svg" alt="icon">
+          <h5 class="features__header">Peace of Mind</h5>
+          <p class="features__description">
+            So it really behaves like neither. Now we have given up.
+          </p>
+        </article>
+        <article class="features__box">
+            <img src="images/icn-resize.icn-xl.svg" alt="icon">
+          <h5 class="features__header">Set For Life</h5>
+          <p class="features__description">
+            They were used to create the machines that launched
+          </p>
+        </article>
+        <article class="features__box">
+            <img src="images/icn-resize.icn-xl.svg" alt="icon">
+          <h5 class="features__header">100% Satisfaction</h5>
+          <p class="features__description">
+            So it really behaves like neither. Now we have given up.
+          </p>
+        </article>
+      </section>
+      <section class="feedback">
+        <h2 class="feedback__header">What Clients Say</h2>
+        <p class="feedback__description">
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics: Newtonian mechanics
+        </p>
+        <div class="feedback__card-box">
+        <article class="feedback__card feedback__card--left">
+            <img class="feedback__pic" src="images/user.1.svg" alt="woman">
+          <h3 class="feedback__person">Regina Miles</h3>
+          <p class="feedback__person-ocupation">Designer</p>
+          <div>
+            <img src="images/icn-bxs-star.svg" alt="filled star" />
+            <img src="images/icn-bxs-star.svg" alt="filled star" />
+            <img src="images/icn-bxs-star.svg" alt="filled star" />
+            <img src="images/icn-bxs-star.svg" alt="filled star" />
+            <img src="images/icn-bx-star.svg" alt="empty star" />
+          </div>
+          <p class="feedback__review">
+            This proved to be impossible using the traditional concepts of space
+            and time. Einstein developed a new view of time first and then
+            space. This proved to be impossible using the traditional concepts
+            of space and time. Einstein developed a new view of time first and
+            then space.
+          </p>
+        </article>
+        <article class="feedback__card">
+            <img class="feedback__pic" src="images/user.2.svg" alt="man">
+          <h3 class="feedback__person">Regina Miles</h3>
+          <p class="feedback__person-ocupation">Designer</p>
+          <div>
+            <img src="images/icn-bxs-star.svg" alt="filled star" />
+            <img src="images/icn-bxs-star.svg" alt="filled star" />
+            <img src="images/icn-bxs-star.svg" alt="filled star" />
+            <img src="images/icn-bxs-star.svg" alt="filled star" />
+            <img src="images/icn-bx-star.svg" alt="empty star" />
+          </div>
+          <p class="feedback__review">
+            This proved to be impossible using the traditional concepts of space
+            and time. Einstein developed a new view of time first and then
+            space. This proved to be impossible using the traditional concepts
+            of space and time. Einstein developed a new view of time first and
+            then space.
+          </p>
+        </article>
+    </div>
+      </section>
+      <section id="pricing" class="appointment">
+        <div  class="appointment__header-box">
+        <p  class="appointment__text">Contact Us</p>
+        <h2 class="appointment__header">Make an Appointment</h2>
+    </div>
+        <form class="appointment__form">
+          <input
+            class="appointment__field"
+            required
+            type="text"
+            placeholder="Full Name"
+          />
+          <input
+            class="appointment__field"
+            required
+            type="email"
+            placeholder="example@gmail.com"
+          />
+          <select class="appointment__field" name="location">
+            <option value="Please-Select">Please Select</option>
+            <option value="select1">select1</option>
+            <option value="select2">select2</option>
+          </select>
+          <select class="appointment__field" name="time">
+            <option value="4:00-Available">4:00 Available</option>
+            <option value="select3">select3</option>
+            <option value="select4">select4</option>
+          </select>
+          <textarea
+            class="appointment__field"
+            placeholder="Message"
+            name="message"
+            rows="5"
+            cols="30"
+          ></textarea>
+          <input class="appointment__button" type="submit" value="Book Appointment" />
+        </form>
+      </section>
+      <section  id="contact" class="contact-us">
+        <div>
+        <h3 class="contact-us__header" id="consult">Consulting Agency For Your Business</h3>
+        <p class="contact-us__description">the quick fox jumps over the lazy dog</p>
+    </div>
+        <div  class="contact-us__button"><a href="tel:6177787312">Contact Us</a></div>
+      </section>
+    </main>
+    <footer class="end-card">
+      <p class="end-card__copyright">Made With Love By Figmaland All Right Reserved</p>
+      <div class="end-card__icons">
+        <img src="images/ant-design_facebook-filled.svg" alt="facebook icon" />
+        <img
+          src="images/ant-design_instagram-outlined.svg"
+          alt="instagram icon"
+        />
+        <img src="images/ant-design_twitter-outlined.svg" alt="twitter icon" />
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

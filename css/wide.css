@@ -1,0 +1,75 @@
+.nav__button{
+    display: inline-block;
+    padding: 1rem;
+}
+
+.page-front{
+    background: linear-gradient(
+        to bottom,
+        rgba(33, 25, 19, 0.6),
+        rgba(16, 17, 18, 0.9)
+      ),
+        url(../images/hero-cover.1.jpg);
+        max-width: 100vw;
+        height: 50vh;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+}
+
+.page-front__box{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.features, .feedback__card-box{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.feedback__pic{
+    display: block;
+    position: absolute;
+    left: -3rem;
+}
+
+.feedback__card{
+    width: 30rem;
+    position: relative;
+
+}
+
+.feedback__card--left{
+    margin-right: 5rem;
+}
+
+.appointment{
+    background: linear-gradient(
+        to bottom,
+        rgba(212, 207, 204, 0.4),
+        rgba(193, 199, 204, 0.6)
+      ), url(../images/contact-cover.1.jpg);
+    height: 50vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact-us {
+    flex-direction: row;
+    padding-bottom: 1rem;
+}
+
+.contact-us__button{
+    height: 4rem;
+    align-self: flex-end;
+    align-content: center;
+    
+}
+
+.end-card{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}

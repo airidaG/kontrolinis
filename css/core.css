@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* @import url(core.css); */
+
+:root {
+  --accent-color: #252b42;
+  --primary-color: #8ec2f2;
+  --main-font: Montserrat;
+  --second-font: Montserrat Alternates;
+  --button-color: #23A6F0;
+  --second-text-color: #737373;
+  --first-text-color: white;
+  --muted-color: #BDBDBD;
+
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.nav-bar {
+  display: block;
+}
+
+.navigate {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__list {
+  list-style-type: none;
+}
+.nav__button > a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.nav__button > a:hover {
+  color: var(--primary-color);
+}
+.burger-icon:hover {
+  background-color: var(--primary-color);
+}
+
+.burger-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    display: none;
+    flex-direction: column;
+  }
+  .burger-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    align-self: center;
+  }
+  .nav-bar.open {
+    display: flex;
+  }
+}
+
+.nav__logo {
+  align-self: center;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.navigate,
+.features,
+.end-card {
+  background-color: var(--accent-color);
+  color: var(--first-text-color);
+  font-family: var(--main-font);
+}
+
+.page-front__box{
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback__pic {
+  display: none;
+}
+
+.feedback {
+  background-color: var(--primary-color);
+}
+
+.feedback__card {
+  background-color: var(--first-text-color);
+}
+
+.page-front {
+  background: linear-gradient(
+    to bottom,
+    rgba(33, 25, 19, 0.9),
+    rgba(16, 17, 18, 0.6)
+  ),
+    url(../images/cover-hero-cover.1.png);
+    max-width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: #ffff;
+    font-family: var(--main-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.page-front__header{
+    font-size: 3rem;
+    
+}
+
+.page-front__text{
+    font-size: 1.5rem;
+    padding: 3rem;
+}
+
+.page-front__button--blue{
+    background-color: var(--button-color);
+    padding:  0.9rem;
+    color: var(--first-text-color);
+    width: 10rem;
+}
+
+.page-front__button{
+    text-decoration: none;
+    border-radius: 37px;
+    align-self: center;
+    margin: 1rem;
+    font-family: var(--main-font);
+    font-weight: 500;
+}
+
+.page-front__button--transparent{
+    border: var(--button-color) solid 2px;
+    color: var(--button-color);
+    padding: 0.7rem;
+}
+
+.page-front__button:hover, .contact-us__button:hover, .appointment__button:hover{
+    background-color: var(--accent-color);
+}
+
+.features, .feedback__card-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+
+}
+.features__box{
+    padding: 2rem;
+
+}
+
+.features__header{
+    font-size: larger;
+}
+
+.feedback{
+    text-align: center;
+    font-family: var(--main-font);
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+.feedback__card{
+    width: 20rem;
+    height: 30rem;
+    text-align: start;
+    padding: 2rem;
+    align-self: center;
+    margin: 1rem;
+}
+
+.feedback__person{
+    font-weight: 700;
+    font-size: x-large;
+    margin: 0;
+}
+
+.feedback__person-ocupation{
+    margin-top: 0.5em;
+    font-weight: bold;
+    color: var(--second-text-color);
+}
+
+.feedback__review{
+    color: var(--second-text-color);
+}
+
+.feedback__header, .feedback__description{
+    color: var(--first-text-color);
+}
+
+.feedback__header{
+    font-size: 2.5rem;
+}
+
+.appointment{
+    background: url(../images/contact-cover.1.png);
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--main-font);
+}
+
+.appointment__form{
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+    align-self: center;
+
+}
+
+.appointment__field{
+    margin: 0.5rem;
+    padding: 0.8rem;
+    border: var(--muted-color) solid 0.5px;
+    border-radius: 5px;
+    color: var(--second-text-color);
+    font-family: var(--main-font);
+}
+
+.appointment__header-box{
+   align-self: center;
+   padding-left: 3rem;
+ 
+}
+
+.appointment__text{
+font-weight: bold;
+}
+
+.appointment__header{
+    font-size: 3rem;
+    margin-top: 0;
+
+}
+
+.appointment__button{
+    background-color: var(--button-color);
+    color: var(--first-text-color);
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--main-font);
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 1.5rem;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+    justify-self: center;
+}
+
+.contact-us__button{
+    background-color: var(--button-color);
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--main-font);
+    width: 10rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-us__button > a{
+    text-decoration: none;
+    color: var(--first-text-color);
+    font-weight: bold;
+
+}
+
+.contact-us__header{
+    font-size: 2rem;
+    max-width: 25rem;
+}
+
+.end-card{
+    text-align: center;
+    padding: 4rem;
+    font-family: var(--second-font);
+}
+
+.end-card__icons > img{
+    padding: 1rem;
+}
